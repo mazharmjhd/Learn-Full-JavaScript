@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!--  
+Another type of method is the static method, which cannot be called through a class instance. Static methods are often used to create utility functions for an application.
+
+Jenis metode lain adalah metode statis, yang tidak dapat dipanggil melalui instance kelas. Metode statis sering digunakan untuk membuat fungsi utilitas untuk suatu aplikasi.
+-->
+
+<html>
+    <body></body>
+    <script>
+        class Point {
+            constructor(x, y) {
+            this.x = x;
+            this.y = y;
+        }
+        static distance(a, b) {
+            const dx = a.x - b.x;
+            const dy = a.y - b.y;
+        
+            return Math.hypot(dx, dy);
+        }
+    }
+
+        const p1 = new Point(7, 2);
+        const p2 = new Point(3, 8);
+
+        console.log(Point.distance(p1, p2));
+    </script>
+</html>
+
+<!-- 
+As you can see, the static distance method is called directly using the class name, without an object.
+-->

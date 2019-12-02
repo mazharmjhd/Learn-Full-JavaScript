@@ -1,0 +1,31 @@
+<!-- 
+ES6 comes to the rescue in such situations. A promise can be created as follows:
+    ES6 datang untuk menyelamatkan dalam situasi seperti itu. Sebuah janji dapat dibuat sebagai berikut:
+ -->
+
+<!DOCTYPE html>
+
+<html>
+    <body>
+    </body>
+    <script>
+        let myPromise = new Promise(function(resolve, reject) {
+            //Work
+            let success = true;
+            let result = "Keren";
+            if (success)
+            resolve(result);
+            else
+            reject(Error("failure"));
+        });
+        myPromise.then(function(result){
+            console.log(result);
+        })
+        console.log("work");
+    </script>
+</html>
+
+<!-- 
+Here, resolve is the method for success and reject is the method for failure.
+    Di sini, tekad adalah metode untuk sukses dan tolak adalah metode untuk kegagalan.
+ -->

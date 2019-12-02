@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--  
+const variables have the same scope as variables declared using let. The difference is that const variables are immutable - they are not allowed to be reassigned.
+For example, the following generates an exception:
+
+Variabel const memiliki cakupan yang sama dengan variabel yang dideklarasikan menggunakan let. Perbedaannya adalah bahwa variabel const tidak dapat diubah - mereka tidak diizinkan untuk dipindahkan.
+Misalnya, yang berikut ini menghasilkan pengecualian:
+-->
+
+<html>
+    <body></body>
+        <script>
+            const a = 'Hello';
+            a = 'Bye';
+        </script>
+</html>
+
+<!--  
+const is not subject to Variable Hoisting too, which means that const declarations do not move to the top of the current execution context.
+Also note that ES6 code will run only in browsers that support it. Older devices and browsers that do not support ES6 will return a syntax error.
+
+const juga tidak tunduk pada Variable Hoisting, yang berarti deklarasi const tidak bergerak ke bagian atas konteks eksekusi saat ini.
+Perhatikan juga bahwa kode ES6 hanya akan berjalan di browser yang mendukungnya. Perangkat dan browser yang lebih lama yang tidak mendukung ES6 akan mengembalikan kesalahan sintaksis.
+-->

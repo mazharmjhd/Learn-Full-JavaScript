@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<!--  
+You can also assign the object to new variable names.
+Anda juga dapat menetapkan objek ke nama variabel baru.
+-->
+
+<html>
+    <body>
+    </body>
+    <script>
+        var o = {h: 42, s: true};
+        var {h: foo, s: bar} = o;
+
+        //console.log(h); //ERROR
+        console.log(foo); //42
+    </script>
+</html>

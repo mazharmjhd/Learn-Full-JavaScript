@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--  
+All HTML elements are objects. And as we know every object has properties and methods.
+The document object has methods that allow you to select the desired HTML element.
+These three methods are the most commonly used for selecting HTML elements:
+
+Semua elemen HTML adalah objek. Dan seperti yang kita ketahui setiap objek memiliki properti dan metode.
+Objek dokumen memiliki metode yang memungkinkan Anda memilih elemen HTML yang diinginkan.
+Tiga metode ini adalah yang paling umum digunakan untuk memilih elemen HTML:
+-->
+
+//finds element by id
+document.getElementById(id) 
+
+//finds elements by class name
+document.getElementsByClassName(name) 
+
+//finds elements by tag name
+document.getElementsByTagName(name)
+
+<!--  
+In the example below, the getElementById method is used to select the element with id="demo" and change its content:
+    Pada contoh di bawah ini, metode getElementById digunakan untuk memilih elemen dengan id = "demo" dan mengubah kontennya:
+-->
+
+var elem = document.getElementById("demo");
+elem.innerHTML = "Hello World!";
+
+<!--  
+The example above assumes that the HTML contains an element with id="demo", for example <div id="demo"></div>.
+    Contoh di atas mengasumsikan bahwa HTML berisi elemen dengan id = "demo", misalnya <div id = "demo"> </div>.
+-->

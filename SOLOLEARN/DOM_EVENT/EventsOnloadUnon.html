@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--  
+The onload and onunload events are triggered when the user enters or leaves the page. These can be useful when performing actions after the page is loaded.
+    Acara onload dan onunload dipicu ketika pengguna memasuki atau meninggalkan halaman. Ini dapat bermanfaat saat melakukan tindakan setelah halaman dimuat.
+
+    <body onload="doSomething()">
+
+Similarly, the window.onload event can be used to run code after the whole page is loaded.
+     Demikian pula, acara window.onload dapat digunakan untuk menjalankan kode setelah seluruh halaman dimuat.
+
+    window.onload = function() {
+    //some code
+    }
+-->
+
+<html>
+    <body>
+        <input type="text" id="name" onchange="change()">
+    </body>
+        <script>
+            function change() {
+                var x = document.getElementById("name");
+                x.value = x.value.toUpperCase();
+            }
+        </script>
+</html>
+
+<!--  
+It’s important to understand events, because they are an essential part of dynamic web pages.
+-->

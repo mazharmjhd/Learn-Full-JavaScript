@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html>
+    <body></body>
+    <script>
+        function* idMaker(){
+            let index = 0;
+            while (index<5)
+            yield index++;
+        }
+            var gen = idMaker();
+            console.log(gen.next().value);
+            console.log(gen.next().value);
+            console.log(gen.next().value);
+            console.log(gen.next().value);
+            console.log(gen.next().value);
+            console.log(gen.next().value);
+    </script>
+</html>
+
+<!--  
+We can exit and re-enter generator functions later. Their variable bindings (context) will be saved across re-entrances. They are a very powerful tool for asynchronous programming, especially when combined with Promises. They can also be useful for creating loops with special requirements.
+
+Kita dapat keluar dan masuk kembali ke fungsi generator nanti. Binding variabel mereka (konteks) akan disimpan di pintu masuk kembali. Mereka adalah alat yang sangat kuat untuk pemrograman asinkron, terutama jika dikombinasikan dengan Janji. Mereka juga dapat berguna untuk membuat loop dengan persyaratan khusus.
+-->

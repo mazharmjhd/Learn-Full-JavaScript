@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<!--  
+Methods
+set(key, value) Adds a specified key/value pair to the map. If the specified key already exists, value corresponding to it is replaced with the specified value.
+get(key) Gets the value corresponding to a specified key in the map. If the specified key doesn't exist, undefined is returned.
+has(key) Returns true if a specified key exists in the map and false otherwise.
+delete(key) Deletes the key/value pair with a specified key from the map and returns true. Returns false if the element does not exist.
+clear() Removes all key/value pairs from map.
+keys() Returns an Iterator of keys in the map for each element.
+values() Returns an Iterator of values in the map for each element.
+entries() Returns an Iterator of array[key, value] in the map for each element.
+
+Metode
+set (key, value) Menambahkan pasangan kunci / nilai yang ditentukan ke peta. Jika kunci yang ditentukan sudah ada, nilai yang sesuai dengannya diganti dengan nilai yang ditentukan.
+get (key) Mendapat nilai yang sesuai dengan kunci yang ditentukan di peta. Jika kunci yang ditentukan tidak ada, undefined dikembalikan.
+has (key) Returns true jika kunci yang ditentukan ada di peta dan false sebaliknya.
+delete (key) Menghapus pasangan kunci / nilai dengan kunci yang ditentukan dari peta dan mengembalikan true. Mengembalikan nilai false jika elemen tidak ada.
+clear () Menghapus semua pasangan kunci / nilai dari peta.
+keys () Mengembalikan Iterator kunci di peta untuk setiap elemen.
+values () Mengembalikan Iterator nilai di peta untuk setiap elemen.
+entri () Mengembalikan Iterator array [kunci, nilai] di peta untuk setiap elemen.
+-->
+
+<html>
+    <body></body>
+    <script>
+        let map = new Map();
+            map.set('k1', 'v1').set('k2', 'v2');
+
+            console.log(map.get('k1')); // v1
+            console.log(map.has('k2')); // true
+
+        for (let kv of map.entries())
+            console.log(kv[0] + " : " + kv[1]);
+    </script>
+</html>
+
+<!--  
+The above example demonstrates some of the ES6 Map methods.
+Map supports different data types i.e. 1 and "1" are two different keys/values.
+-->

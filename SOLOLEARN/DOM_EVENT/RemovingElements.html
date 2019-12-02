@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--  
+To remove an HTML element, you must select the parent of the element and use the removeChild(node) method.
+    Untuk menghapus elemen HTML, Anda harus memilih induk elemen dan menggunakan metode removeChild (node).
+-->
+
+<html>
+    <body>
+        <div id="demo">
+            <p id="p1">This is a paragraph</p>
+            <p id="p2">This is another paragraph</p>
+        </div>
+        <script>
+            var parent = document.getElementById("demo");
+            var child = document.getElementById("p1");
+                parent.removeChild(child);
+        </script>
+    </body>
+</html>
+
+<!--  
+This removes the paragraph with id="p1" from the page.
+An alternative way of achieving the same result would be the use of the parentNode property to get the parent of the element we want to remove:
+var child = document.getElementById("p1");
+child.parentNode.removeChild(child);
+
+Ini menghapus paragraf dengan id = "p1" dari halaman.
+Cara alternatif untuk mencapai hasil yang sama adalah penggunaan properti parentNode untuk mendapatkan induk elemen yang ingin kita hapus:
+var child = document.getElementById ("p1");
+child.parentNode.removeChild (child);
+-->

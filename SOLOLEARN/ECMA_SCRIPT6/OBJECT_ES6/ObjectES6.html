@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--  
+JavaScript variables can be Object data types that contain many values called properties.
+An object can also have properties that are function definitions called methods for performing actions on the object.
+ES6 introduces shorthand notations and computed property names that make declaring and using objects easier to understand.
+The new method definition shorthand does not require the colon (:) or function keyword, as in the grow function of the tree object declaration:
+
+Variabel JavaScript dapat berupa tipe data objek yang berisi banyak nilai yang disebut properti.
+Objek juga dapat memiliki properti yang merupakan definisi fungsi yang disebut metode untuk melakukan tindakan pada objek.
+ES6 memperkenalkan notasi steno dan nama properti yang dikomputasi yang membuat mendeklarasikan dan menggunakan objek lebih mudah dipahami.
+Singkatan definisi metode baru tidak memerlukan titik dua (:) atau fungsi kata kunci, seperti pada fungsi tumbuh deklarasi objek pohon:
+-->
+
+<html>
+    <body></body>
+    <script>
+        let tree = {
+            height: 10,
+            color: 'green',
+            grow(){
+                this.height +=2;
+            }
+        };
+        tree.grow();
+        console.log(tree.height); //12
+    </script>
+</html>

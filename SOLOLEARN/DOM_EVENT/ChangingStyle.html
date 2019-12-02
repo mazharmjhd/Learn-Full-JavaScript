@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<!--  
+The style of HTML elements can also be changed using JavaScript.
+All style attributes can be accessed using the style object of the element.
+
+Gaya elemen HTML juga dapat diubah menggunakan JavaScript.
+Semua atribut gaya dapat diakses menggunakan objek gaya elemen.
+-->
+
+<html>
+    <body>
+        <div id="demo" style="width:200px">some text</div>
+        <script>
+            var x = document.getElementById("demo");
+                x.style.color = "red";
+                x.style.width = "100px";
+        </script>
+    </body>
+</html>
+
+<!--  
+The code above changes the text color and width of the div element.
+All CSS properties can be set and modified using JavaScript. Just remember, that you cannot use dashes (-) in the property names: these are replaced with camelCase versions, where the compound words begin with a capital letter.
+For example: the background-color property should be referred to as backgroundColor.
+
+Kode di atas mengubah warna teks dan lebar elemen div.
+Semua properti CSS dapat diatur dan dimodifikasi menggunakan JavaScript. Hanya ingat, bahwa Anda tidak dapat menggunakan tanda hubung (-) dalam nama properti: ini diganti dengan versi camelCase, di mana kata majemuk dimulai dengan huruf kapital.
+Sebagai contoh: properti warna latar harus disebut sebagai backgroundColor.
+-->

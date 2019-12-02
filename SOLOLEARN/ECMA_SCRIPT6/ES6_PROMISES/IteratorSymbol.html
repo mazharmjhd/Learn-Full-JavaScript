@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<!--  
+We can nest generator functions inside each other to create more complex structures and pass them arguments while we are calling them.
+The example below will show a useful case of how we can use generator functions and Symbol.iterators together.
+
+Kita dapat membuat sarang fungsi generator di dalam satu sama lain untuk membuat struktur yang lebih kompleks dan meneruskannya argumen saat kita memanggil mereka.
+Contoh di bawah ini akan menunjukkan kasus yang bermanfaat tentang bagaimana kita dapat menggunakan fungsi generator dan Symbol.iterators secara bersamaan.
+-->
+
+<html>
+    <body></body>
+    <script>
+        const arr = ['0','1','4','a','9','c','16'];
+        const my_obj = {
+            [Symbol.iterator]: function*() {
+                for(let index of arr) {
+                    yield `${index}`;
+                }
+            }
+        };
+        const all = [...my_obj]
+        .map(i=>parseInt(i,10))
+        .map(Math.sqrt)
+        .filter((i) => i <5)
+        .reduce((i,d) => i + d);
+            console.log(all);
+    </script>
+</html>
+
+<!--  
+We create an object of 7 elements by using Symbol.iterator and generator functions. In the second part, we assign our object to a constant all. At the end, we print its value.
+Tap Try It Yourself and follow the instructions in the comments to see the results.
+
+Kami membuat objek 7 elemen dengan menggunakan Symbol.iterator dan fungsi generator. Pada bagian kedua, kita menetapkan objek kita ke konstanta semua. Pada akhirnya, kami mencetak nilainya.
+Ketuk Coba Sendiri dan ikuti instruksi di komentar untuk melihat hasilnya.
+-->

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!--  
+Here, resolve is the method for success and reject is the method for failure.
+If a method returns a promise, its calls should use the then method which takes two methods as input; one for success and the other for the failure.
+
+Di sini, tekad adalah metode untuk sukses dan tolak adalah metode untuk kegagalan.
+Jika suatu metode mengembalikan janji, panggilannya harus menggunakan metode lalu yang menggunakan dua metode sebagai input; satu untuk sukses dan yang lainnya untuk kegagalan.
+-->
+
+<html>
+    <body></body>
+    <script>
+        function asyncFunc(work){
+            return new Promise(function(resolve, reject){
+                if (work === "")
+                    reject(Error("Nothing"));
+                setTimeout(function(){
+                    resolve(work);
+                }, 1000);
+            });
+        }
+
+        asyncFunc("Work 1") //Task 1
+        .then(function(result){
+            console.log(result);
+            return asyncFunc("Work 2"); //Task 2
+        }, function(error) {
+            console.log(error);
+        })
+        .then(function(result){
+            console.log(result);
+        }, function(error){
+            console.log(error);
+        });
+        console.log("End");
+    </script>
+</html>
+
+<!-- 
+It also prints "End", "Work 1" and "Work 2" (the work is done asynchronously). But, this is clearly more readable than the previous example and in more complex situations it is easier to work with.
+Tap Try It Yourself to play around with the codes and see ES6 Promises in action.
+
+Ini juga mencetak "End", "Work 1" dan "Work 2" (pekerjaan dilakukan secara tidak sinkron). Tapi, ini jelas lebih mudah dibaca daripada contoh sebelumnya dan dalam situasi yang lebih kompleks lebih mudah untuk digunakan.
+Ketuk Coba Sendiri untuk bermain-main dengan kode dan melihat ES6 Janji beraksi.
+-->

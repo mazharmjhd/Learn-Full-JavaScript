@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--  
+The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+It will continue calling the function until clearInterval() is called or the window is closed.
+
+Metode setInterval () memanggil fungsi atau mengevaluasi ekspresi pada interval yang ditentukan (dalam milidetik).
+Ini akan terus memanggil fungsi sampai clearInterval () dipanggil atau jendela ditutup.
+-->
+
+<html>
+    <body>
+        <script>
+            function myAlert(){
+                alert("Hi");
+            }
+            setInterval(myAlert, 3000);
+        </script>
+    </body>
+</html>
+
+<!--  
+This will call the myAlert function every 3 seconds (1000 ms = 1 second).
+Write the name of the function without parentheses when passing it into the setInterval method.
+
+Ini akan memanggil fungsi myAlert setiap 3 detik (1000 ms = 1 detik).
+Tulis nama fungsi tanpa tanda kurung ketika meneruskannya ke metode setInterval.
+-->

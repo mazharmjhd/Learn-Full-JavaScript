@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<!--  
+And here's an example of an arrow function with default parameters:
+-->
+
+<html>
+    <body>
+    </body>
+        <script>
+            const test = (a,b = 3, c = 42) => {
+                return a + b + c;
+            }
+            console.log(test(5)); //50
+        </script>
+</html>
+
+<!--  
+Default value expressions are evaluated at function call time from left to right. This also means that default expressions can use the values of previously-filled parameters.
+-->

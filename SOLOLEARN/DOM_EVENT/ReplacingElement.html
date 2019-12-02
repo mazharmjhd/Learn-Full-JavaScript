@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--  
+To replace an HTML element, the element.replaceChild(newNode, oldNode) method is used.
+Untuk mengganti elemen HTML, metode element.replaceChild (newNode, oldNode) digunakan.
+-->
+
+<html>
+    <body>
+        <div id="demo">
+            <p id="p1">This is a paragraph</p>
+            <p id="p2">This is another paragraph</p>    
+        </div>
+        <script>
+            var p = document.createElement("p");
+            var node = document.createTextNode("This is New");
+                p.appendChild(node);
+
+                var parent = document.getElementById("demo");
+                var child = document.getElementById("p1");
+                    parent.replaceChild(p,child);
+        </script>
+    </body>
+</html>
+
+<!--  
+The code above creates a new paragraph element that replaces the existing p1 paragraph.
+-->

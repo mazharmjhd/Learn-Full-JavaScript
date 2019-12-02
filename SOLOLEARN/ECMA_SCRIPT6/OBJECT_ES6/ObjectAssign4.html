@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<!--  
+Finally, you can assign a value to an object property in the Object.assign() statement.
+
+Akhirnya, Anda bisa menetapkan nilai ke properti objek dalam pernyataan Object.assign ().
+-->
+
+<html>
+    <body></body>
+    <script>
+        let person = {
+            name: 'Jack',
+            age: 18
+        };
+
+        let newPerson = Object.assign({},person,{name:'Bob'});
+            console.log(newPerson.name); // Bob
+    </script>
+</html>

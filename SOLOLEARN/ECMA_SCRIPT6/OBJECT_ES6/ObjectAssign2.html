@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--  
+Now, let's see how we can use assign() to create a duplicate object without creating a reference (mutating) to the base object.
+In the following example, assignment was used to try to generate a new object. However, using = creates a reference to the base object. Because of this reference, changes intended for a new object mutate the original object:
+
+Sekarang, mari kita lihat bagaimana kita dapat menggunakan assign () untuk membuat objek duplikat tanpa membuat referensi (bermutasi) ke objek dasar.
+Dalam contoh berikut, tugas digunakan untuk mencoba menghasilkan objek baru. Namun, menggunakan = membuat referensi ke objek dasar. Karena referensi ini, perubahan yang ditujukan untuk objek baru bermutasi objek asli:
+-->
+
+<html>
+    <body></body>
+    <script>
+        let person = {
+            name: 'Jack',
+            age: 18
+        };
+
+        let newPerson = person; //newPerson references person
+        newPerson.name = 'Bob';
+
+        console.log(person.name); //Bob
+        console.log(newPerson.name) //Bob
+    </script>
+</html>

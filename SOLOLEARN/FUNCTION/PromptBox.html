@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!-- 
+A prompt box is often used to have the user input a value before entering a page.
+When a prompt box pops up, the user will have to click either OK or Cancel to proceed after entering the input value.
+If the user clicks OK, the box returns the input value. If the user clicks Cancel, the box returns null.
+
+The prompt() method takes two parameters.
+- The first is the label, which you want to display in the text box.
+- The second is a default string to display in the text box (optional).
+
+
+Kotak prompt sering digunakan untuk meminta pengguna memasukkan nilai sebelum memasuki halaman.
+Ketika kotak prompt muncul, pengguna harus mengklik OK atau Batal untuk melanjutkan setelah memasukkan nilai input.
+Jika pengguna mengklik OK, kotak mengembalikan nilai input. Jika pengguna mengklik Batalkan, kotak mengembalikan nol.
+
+Metode prompt () mengambil dua parameter.
+- Yang pertama adalah label, yang ingin Anda tampilkan di kotak teks.
+- Yang kedua adalah string default untuk ditampilkan di kotak teks (opsional).
+-->
+
+<html>
+    <body>
+        <script>
+            var user = prompt("Please enter your name");
+                alert(user);
+        </script>
+    </body>
+</html>
+
+<!--  
+When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value. Do not overuse this method, because it prevents the user from accessing other parts of the page until the box is closed.
+-->

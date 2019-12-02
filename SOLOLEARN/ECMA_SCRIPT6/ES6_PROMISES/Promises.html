@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!--  
+A Promise is a better way for asynchronous programming when compared to the common way of using a setTimeout() type of method.
+
+Sebuah Janji adalah cara yang lebih baik untuk pemrograman asinkron bila dibandingkan dengan cara umum menggunakan metode setTimeout ().
+-->
+
+<html>
+    <body></body>
+    <script>
+        setTimeout(function(){
+            console.log("Work 1");
+            setTimeout(function() {
+                console.log("Work 2");
+            }, 1000);
+            console.log("Work 3");
+        }, 1000);
+        console.log("End");
+    </script>
+</html>
+
+<!--  
+It prints "End", "Work 1" and "Work 2" in that order (the work is done asynchronously). But if there are more events like this, the code becomes very complex.
+
+Mencetak "End", "Work 1" dan "Work 2" dalam urutan itu (pekerjaan dilakukan secara serempak). Tetapi jika ada lebih banyak peristiwa seperti ini, kodenya menjadi sangat kompleks.
+-->

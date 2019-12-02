@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<!--  
+ES6 introduced a shorthand that does not require the keyword function for a function assigned to a method's name. One type of class method is the prototype method, which is available to objects of the class.
+For Example:
+
+ES6 memperkenalkan singkatan yang tidak memerlukan fungsi kata kunci untuk fungsi yang ditetapkan untuk nama metode. Salah satu jenis metode kelas adalah metode prototipe, yang tersedia untuk objek-objek kelas.
+Sebagai contoh:
+-->
+
+<html>
+    <body></body>
+    <script>
+        class Rectangle{
+            constructor(height,width){
+                this.height = height;
+                this.width = width;
+            }
+            get area() {
+                return this.calcArea();
+            }
+            calcArea(){
+                return this.height * this.width;
+            }
+        }
+
+        const square = new Rectangle(5,5);
+        console.log(square.area); //25
+    </script>
+</html>
+
+<!-- In the code above, area is a getter, calcArea is a method.
+ -->

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<!--  
+You can also define a class with a class expression, where the class can be named or unnamed.
+A named class looks like:
+
+Anda juga bisa mendefinisikan kelas dengan ekspresi kelas, di mana kelas bisa dinamai atau tidak disebutkan namanya.
+Kelas bernama terlihat seperti:
+-->
+
+<html>
+    <body>
+    </body>
+    <script>
+        var Square = class Rectangle {
+            constructor(height, width) {
+                this.height = height;
+                this.width = width;
+            }
+        };
+
+        const square = new Square(5, 5);
+        const poster = new Square(2, 3); 
+
+        console.log(square.height);
+    </script>
+</html>

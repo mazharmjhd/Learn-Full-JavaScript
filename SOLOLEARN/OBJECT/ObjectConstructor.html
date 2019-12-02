@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<!--  
+In the previous lesson, we created an object using the object literal (or initializer) syntax.
+
+Dalam pelajaran sebelumnya, kami membuat sebuah objek menggunakan sintaksis objek literal (atau penginisialisasi).
+-->
+
+<html>
+    <body>
+        <script>
+            var person = {
+                name:"John", age:42, favColor:"Red"
+            };
+
+            function person(name,age,color){
+                this.name = name;
+                this.age = age;
+                this.color = color;
+            }
+        </script>
+    </body>
+</html>
+
+<!--  
+This allows you to create only a single object.
+Sometimes, we need to set an "object type" that can be used to create a number of objects of a single type.
+The standard way to create an "object type" is to use an object constructor function.
+
+Ini memungkinkan Anda untuk membuat hanya satu objek.
+Terkadang, kita perlu mengatur "tipe objek" yang dapat digunakan untuk membuat sejumlah objek dari tipe tunggal.
+Cara standar untuk membuat "tipe objek" adalah dengan menggunakan fungsi konstruktor objek.
+-->
+
+<!--  
+The above function (person) is an object constructor, which takes parameters and assigns them to the object properties.
+The this keyword refers to the current object.
+Note that this is not a variable. It is a keyword, and its value cannot be changed.
+
+Fungsi di atas (orang) adalah konstruktor objek, yang mengambil parameter dan menetapkannya ke properti objek.
+Kata kunci ini mengacu pada objek saat ini.
+Perhatikan bahwa ini bukan variabel. Itu adalah kata kunci, dan nilainya tidak dapat diubah.
+-->

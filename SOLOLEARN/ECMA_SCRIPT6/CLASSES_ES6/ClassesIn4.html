@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--  
+In the unnamed class expression, a variable is simply assigned the class definition:
+Dalam ekspresi kelas yang tidak disebutkan namanya, variabel hanya diberi definisi kelas:
+-->
+
+<html>
+    <body></body>
+    <script>
+        var Square = class {
+            constructor(height, width) {
+            this.height = height;
+            this.width = width;
+            }
+        };
+
+        const square = new Square(5, 5);
+        const poster = new Square(2, 3); 
+
+        console.log(square.height);
+    </script>
+</html>
+
+<!--  
+The constructor is a special method which is used for creating and initializing an object created with a class.
+There can be only one constructor in each class.
+
+Konstruktor adalah metode khusus yang digunakan untuk membuat dan menginisialisasi objek yang dibuat dengan kelas.
+Hanya ada satu konstruktor di setiap kelas.
+-->

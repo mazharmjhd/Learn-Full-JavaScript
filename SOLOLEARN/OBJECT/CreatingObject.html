@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--  
+Once you have an object constructor, you can use the new keyword to create new objects of the same type.
+
+Setelah Anda memiliki konstruktor objek, Anda dapat menggunakan kata kunci baru untuk membuat objek baru dari jenis yang sama.
+-->
+
+<html>
+    <body>
+        <script>
+            function person(name, age, color){
+                this.name = name;
+                this.age = age;
+                this.color = color;
+            }
+
+            var p1 = new person("John",42,"Red");
+            var p2 = new person("Azhar",23,"Green");
+
+            document.write(p1.age);
+            document.write(p2.name);
+        </script>
+    </body>
+</html>

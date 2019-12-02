@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<!-- 
+To avoid this (mutations), use Object.assign() to create a new object.
+
+Untuk menghindari ini (mutasi), gunakan Object.assign () untuk membuat objek baru.
+-->
+
+<html>
+    <body></body>
+    <script>
+        let person ={
+            name: 'Jack',
+            age: 18
+        };
+
+        let newPerson = Object.assign({}, person);
+        newPerson.name = 'Bob';
+
+        console.log(person.name); //Jack
+        console.log(newPerson.name); //Bob
+    </script>
+</html>

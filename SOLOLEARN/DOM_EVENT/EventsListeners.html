@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<!--  
+The addEventListener() method attaches an event handler to an element without overwriting existing event handlers. You can add many event handlers to one element.
+You can also add many event handlers of the same type to one element, i.e., two "click" events.
+    Metode addEventListener () melampirkan pengendali acara ke elemen tanpa menimpa penangan acara yang ada. Anda dapat menambahkan banyak penangan acara ke satu elemen.
+    Anda juga dapat menambahkan banyak pengendali acara dari jenis yang sama ke satu elemen, yaitu, dua peristiwa "klik".
+
+element.addEventListener(event, function, useCapture);
+-->
+
+<!--  
+The first parameter is the event's type (like "click" or "mousedown").
+The second parameter is the function we want to call when the event occurs.
+The third parameter is a Boolean value specifying whether to use event bubbling or event capturing. This parameter is optional, and will be described in the next lesson.
+    Parameter pertama adalah jenis acara (seperti "klik" atau "mouse").
+    Parameter kedua adalah fungsi yang ingin kita panggil saat acara terjadi.
+    Parameter ketiga adalah nilai Boolean yang menentukan apakah akan menggunakan bubbling peristiwa atau menangkap peristiwa. Parameter ini opsional, dan akan dijelaskan dalam pelajaran berikutnya.
+
+Note that you don't use the "on" prefix for this event; use "click" instead of "onclick".
+    Note that you don't use the "on" prefix for this event; use "click" instead of "onclick".
+
+element.addEventListener("click", myFunction);
+element.addEventListener("mouseover", myFunction);
+
+function myFunction() {
+  alert("Hello World!");
+}
+-->
+
+<!--  
+This adds two event listeners to the element.
+We can remove one of the listeners:
+    Ini menambahkan dua pendengar acara ke elemen.
+    Kami dapat menghapus salah satu pendengar:
+
+element.removeEventListener("mouseover", myFunction);
+-->
+
+<html>
+    <body>
+        <button id="demo">Start</button>
+    </body>
+        <script>
+            var btn = document.getElementById("demo");
+            btn.addEventListener("click",myFunction);
+
+                function myFunction(){
+                    alert(Math.random());
+                    btn.removeEventListener("click", myFunction);
+                }
+        </script>
+</html>
+
+<!--  
+After clicking the button, an alert with a random number displays and the event listener is removed.
+Internet Explorer version 8 and lower do not support the addEventListener() and removeEventListener() methods. However, you can use the document.attachEvent() method to attach event handlers in Internet Explorer.
+
+Setelah mengklik tombol, peringatan dengan nomor acak ditampilkan dan pendengar acara dihapus.
+Internet Explorer versi 8 dan yang lebih rendah tidak mendukung metode addEventListener () dan removeEventListener (). Namun, Anda dapat menggunakan metode document.attachEvent () untuk melampirkan penangan acara di Internet Explorer.
+-->

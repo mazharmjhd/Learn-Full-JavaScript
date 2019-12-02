@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<!--  
+The following code defines a timer that calls the move() function every 10 milliseconds:
+    Kode berikut mendefinisikan timer yang memanggil fungsi move () setiap 10 milidetik:
+
+var t = setInterval(move, 10);
+-->
+
+<!--  
+However, this makes our box move to the right forever. To stop the animation when the box reaches the end of the container, we add a simple check to the move() function and use the clearInterval() method to stop the timer.
+    Namun, ini membuat kotak kami bergerak ke kanan selamanya. Untuk menghentikan animasi ketika kotak mencapai ujung wadah, kami menambahkan centang sederhana ke fungsi move () dan menggunakan metode clearInterval () untuk menghentikan timer.
+
+function move() {
+  
+if(pos >= 150) {
+    clearInterval(t);
+  } else {
+    pos += 1;
+    box.style.left = pos+"px";
+  }
+}
+-->
+
+<html>
+    <style>
+        #container {
+            width: 200px;
+            height: 200px;
+            background: green;
+            position: relative;
+        }
+
+        #box {
+            width: 50px;
+            height: 50px;
+            background: red;
+            position: absolute;
+        }
+    </style>
+    <body>
+        <div id="container">
+            <div id="box"> 
+            </div>
+        </div>
+    </body>
+        <script>
+            window.onload = function() {
+                var pos = 0;
+                //our box element
+                    var box = document.getElementById('box');
+                    var t = setInterval(move, 10);
+
+                        function move(){
+                            if(pos >= 150) {
+                                clearInterval(t);
+                            }else{
+                                pos += 1;
+                                box.style.left = pos+'px';
+                            }
+                        }
+            };
+        </script>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<!--  
+ES6 provides an easy way to do the example above with spread operators:
+ES6 menyediakan cara mudah untuk melakukan contoh di atas dengan operator spread:
+-->
+
+<html>
+    <body></body>
+    <script>
+        const myFunction = (w,x,y,z) => {
+            console.log(w+x+y+z);
+        };
+        let args = [1,2,3];
+        myFunction(...args, 4);
+    </script>
+</html>

@@ -1,0 +1,35 @@
+<!-- 
+Objek Checkbox
+
+Objek checkbox menyimpan informasi tentang elemen form yang berupa kotak cek.
+Penggunaannya hampir sama seperti objek radio.
+-->
+
+<html>
+    <head><title>Objek Checkbox</title></head>
+    <body>
+        <script language="JavaScript">
+            function radio_box(form){
+                var ket = "";
+                var ketl = "";
+                    if (form.bola.checked == true){
+                        ket = "Nonton Bola";
+                }
+                    if (form.tv.checked == true){
+                        ketl = "Noton Tv";
+                }
+                alert ('Hobby anda ' +ket+' '+ketl);
+            }
+            </script>
+            <form>
+                <h1>Memasukan Data Dengan Objek Checkbox</h1><hr>
+                <p>Hobby Anda :
+                    <input type="checkbox" value="ON" name="bola">Nonton Sepak bola
+                    <input type="checkbox" value="ON" name="tv">Nonton Televisi
+                </p><hr>
+                <p>
+                    <input type="button" value="CONFIRM" onclick="radio_box(this.form)">
+                    <input type="reset" value="RESET"></p>
+            </form>
+    </body>
+</html>

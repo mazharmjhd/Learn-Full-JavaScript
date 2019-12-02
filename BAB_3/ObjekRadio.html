@@ -1,0 +1,33 @@
+<!-- 
+Objek Radio
+
+Objek radio adalah komponen yang digunakan untuk melakukan suatu pemilihan data. Karena
+selalu berupa Array , untuk mengakses satu tombol radio digunakan radio[indeks]. Disamping itu
+objek radio juga mempunyai nili True jika dipilih dan False jika tidak. Untuk memilih suatu objek
+radio menggunakan properti Checked.
+-->
+
+<html>
+    <head><title>Objek Radio</title></head>
+    <body>
+        <script language="JavaScript">
+            function radio_box(form){
+                var ket = "";
+                if (form.wanita.checked == true){
+                    ket = "Wanita";
+                } else {
+                    ket = "Pria";
+                }
+                alert('Anda adalah seorang ' +ket);
+            }
+            </script>
+            <form>
+                <h1>Memasukkan Data Dengan Objek Radio</h1><hr>
+                <p><input type="radio" value="wanita" name="wanita">Wanita</p>
+                <hr>
+                <p><input type="button" value="CONFIRM" onclick="radio_box(this.form)">
+                <input type="reset" value="RESET">
+                </p>
+            </form>
+    </body>
+</html>

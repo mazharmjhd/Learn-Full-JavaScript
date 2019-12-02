@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!--  
+While many programming languages support arrays with named indexes (text instead of numbers), called associative arrays, JavaScript does not.
+However, you still can use the named array syntax, which will produce an object.
+For example:
+
+Sementara banyak bahasa pemrograman mendukung array dengan nama indeks (teks bukan angka), yang disebut array asosiatif, JavaScript tidak.
+Namun, Anda masih bisa menggunakan sintaks array bernama, yang akan menghasilkan objek.
+Sebagai contoh:
+-->
+
+<html>
+    <body>
+        <script>
+            var person = []; //empty array
+                person["name"] = "John";
+                person["age"] = 46;
+                    document.write(person["age"]);
+        </script>
+    </body>
+</html>
+
+<!--  
+Now, person is treated as an object, instead of being an array.
+The named indexes "name" and "age" become properties of the person object.
+As the person array is treated as an object, the standard array methods and properties will produce incorrect results. For example, person.length will return 0.
+
+Sekarang, orang diperlakukan sebagai objek, bukannya menjadi array.
+Indeks bernama "nama" dan "usia" menjadi properti dari objek orang.
+Karena array orang diperlakukan sebagai objek, metode dan properti array standar akan menghasilkan hasil yang salah. Misalnya, person.length akan mengembalikan 0.
+-->
+
+<!--  
+Remember that JavaScript does not support arrays with named indexes.
+In JavaScript, arrays always use numbered indexes.
+It is better to use an object when you want the index to be a string (text).
+Use an array when you want the index to be a number.
+If you use a named index, JavaScript will redefine the array to a standard object.
+
+Ingat bahwa JavaScript tidak mendukung array dengan indeks bernama.
+Dalam JavaScript, array selalu menggunakan indeks bernomor.
+Lebih baik menggunakan objek ketika Anda ingin indeks menjadi string (teks).
+Gunakan array ketika Anda ingin indeks menjadi angka.
+Jika Anda menggunakan indeks bernama, JavaScript akan mendefinisikan ulang array ke objek standar.
+-->

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<!--  
+When creating an object by using duplicate property names, the last property will overwrite the prior ones of the same name.
+
+Saat membuat objek dengan menggunakan nama properti duplikat, properti terakhir akan menimpa yang sebelumnya dari nama yang sama.
+-->
+
+<html>
+    <body></body>
+    <script>
+    var a = {x:1, x:2, x:3, x:4};
+        console.log(a.x);
+    </script>
+</html>
+
+<!--  
+Duplicate property names generated a SyntaxError in ES5 when using strict mode. However, ES6 removed this limitation.
+-->

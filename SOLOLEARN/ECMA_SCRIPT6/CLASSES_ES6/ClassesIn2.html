@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!--  
+A declared class can then be used to create multiple objects using the keyword new.
+Kelas yang dideklarasikan kemudian dapat digunakan untuk membuat beberapa objek menggunakan kata kunci baru.
+-->
+
+<html>
+    <body></body>
+    <script>
+        class Rectangle {
+            constructor(height, width) {
+                this.height = height;
+                this.width= width;
+            }
+        }
+
+        const square = new Rectangle(5,5);
+        const poster = new Rectangle(2,3);
+
+        console.log(square.height);
+    </script>
+</html>
+
+<!--  
+Class Declarations are not hoisted while Function Declarations are. If you try to access your class before declaring it, ReferenceError will be returned.
+Deklarasi Kelas tidak diangkat sementara Deklarasi Fungsi. Jika Anda mencoba mengakses kelas Anda sebelum mendeklarasikannya, ReferenceError akan dikembalikan.
+-->

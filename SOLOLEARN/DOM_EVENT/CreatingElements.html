@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<!--  
+Use the following methods to create new nodes:
+element.cloneNode() clones an element and returns the resulting node.
+document.createElement(element) creates a new element node.
+document.createTextNode(text) creates a new text node.
+
+Gunakan metode berikut untuk membuat node baru:
+element.cloneNode () mengkloning elemen dan mengembalikan node yang dihasilkan.
+document.createElement (elemen) membuat simpul elemen baru.
+document.createTextNode (teks) membuat simpul teks baru.
+
+    var node = document.createTextNode("Some new text");
+-->
+
+<!--  
+This will create a new text node, but it will not appear in the document until you append it to an existing element with one of the following methods:
+element.appendChild(newNode) adds a new child node to an element as the last child node.
+element.insertBefore(node1, node2) inserts node1 as a child before node2.
+
+Ini akan membuat simpul teks baru, tetapi tidak akan muncul dalam dokumen sampai Anda menambahkannya ke elemen yang ada dengan salah satu metode berikut:
+element.appendChild (newNode) menambahkan simpul anak baru ke sebuah elemen sebagai simpul anak terakhir.
+element.insertBefore (node1, node2) menyisipkan node1 sebagai anak sebelum node2.
+-->
+
+<html>
+    <body>
+        <div id ="demo">Some Content</div>
+        <script>
+            //membuat paragraph baru
+            var p = document.createElement("p");
+            var node = document.createTextNode("Some New Text");
+
+            //menambah text ke paragraph
+            p.appendChild(node);
+
+            var div = document.getElementById("demo");
+            //menambahkan paragraph ke div
+            div.appendChild(p);
+        </script>
+    </body>
+</html>
+
+<!--  
+This creates a new paragraph and adds it to the existing div element on the page.
+-->

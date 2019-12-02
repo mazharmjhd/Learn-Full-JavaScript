@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<!--  
+A Map object can be used to hold key/value pairs. A key or value in a map can be anything (objects and primitive values).
+
+The syntax new Map([iterable]) creates a Map object where iterable is an array or any other iterable object whose elements are arrays (with a key/value pair each).
+
+An Object is similar to Map but there are important differences that make using a Map preferable in certain cases:
+1) The keys can be any type including functions, objects, and any primitive.
+2) You can get the size of a Map.
+3) You can directly iterate over Map.
+4) Performance of the Map is better in scenarios involving frequent addition and removal of key/value pairs.
+
+The size property returns the number of key/value pairs in a map.
+
+
+Objek Peta dapat digunakan untuk menahan pasangan kunci / nilai. Kunci atau nilai dalam peta bisa berupa apa saja (objek dan nilai primitif).
+
+Sintaks Map baru ([iterable]) membuat objek Map di mana iterable adalah array atau objek iterable lainnya yang elemen-elemennya adalah array (dengan masing-masing pasangan kunci / nilai).
+
+Objek mirip dengan Peta tetapi ada perbedaan penting yang membuat penggunaan Peta lebih disukai dalam kasus-kasus tertentu:
+1) Kunci dapat berupa jenis apa pun termasuk fungsi, objek, dan primitif apa pun.
+2) Anda bisa mendapatkan ukuran Peta.
+3) Anda dapat langsung beralih ke Peta.
+4) Kinerja Peta lebih baik dalam skenario yang melibatkan penambahan dan penghapusan pasangan kunci / nilai yang sering.
+
+Properti ukuran mengembalikan jumlah pasangan kunci / nilai dalam peta.
+-->
+
+<html>
+    <body></body>
+    <script>
+        let map = new Map([['k1', 'v1'], ['k2', 'v2']]);
+            console.log(map.size); // 2
+    </script>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<!--  
+Once you have selected the element(s) you want to work with, you can change their attributes.
+As we have seen in the previous lessons, we can change the text content of an element using the innerHTML property.
+Similarly, we can change the attributes of elements.
+For example, we can change the src attribute of an image:
+
+Setelah Anda memilih elemen yang ingin Anda kerjakan, Anda dapat mengubah atributnya.
+Seperti yang telah kita lihat dalam pelajaran sebelumnya, kita dapat mengubah konten teks dari suatu elemen menggunakan properti innerHTML.
+Demikian pula, kita dapat mengubah atribut elemen.
+Sebagai contoh, kita dapat mengubah atribut src dari suatu gambar:
+
+<img id="myimg" src="orange.png" alt="" />
+<script>
+var el = document.getElementById("myimg");
+el.src = "apple.png";
+</script>
+-->
+
+<html>
+    <body>
+        <a href="https://www.example.com">Some Link</a>
+            <script>
+                window.onload = function() {
+                    var el = document.getElementsByTagName('a');
+                    el[0].href='http://www.sololearn.com';
+                }
+            </script>
+    </body>
+</html>

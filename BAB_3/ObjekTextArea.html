@@ -1,0 +1,28 @@
+<!-- 
+Objek TextArea
+
+Objek textarea menyimpan informasi tentang elemen form yang berupa kotak teks dengan banyak
+baris.
+-->
+
+<html>
+    <head><title>Objek TextArea</title></head>
+<body>
+    <script language="JavaScript">
+        function tekan(){
+            var ketstr = (document.fform.Ket.value);
+            document.fform.Oket.value = ketstr;
+        }
+        </script>
+        <form name ="fform">
+            <h1> Memasukan Data Dengan Objek TextArea</h1><hr>
+            <h3>Keterangan :</h3><br>
+            <textarea name="Ket" rows="3" cols="30"></textarea>
+            <br><br>
+            <input type="button" value="kirim" onclick="tekan()">
+            <input type="reset" value="ulang">
+            <h3>Output Keterangan :</h3>
+            <textarea name="Oket" rows="3" cols="30"></textarea>
+        </form>
+</body>
+</html>

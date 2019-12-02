@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<!--  
+Notice that we left the second argument's place empty.
+The destructuring syntax also simplifies assignment and swapping values:
+
+Perhatikan bahwa kita membiarkan tempat argumen kedua kosong.
+Sintaksis perusakan juga menyederhanakan nilai penugasan dan pertukaran:
+-->
+
+<html>
+    <body></body>
+    <script>
+        let a, b, c = 4, d = 8;
+            [a, b = 6] = [2]; // a = 2, b = 6
+                [c, d] = [d, c]; // c = 8, d = 4
+
+                console.log(c); //8
+                console.log(d); //4
+    </script>
+</html>

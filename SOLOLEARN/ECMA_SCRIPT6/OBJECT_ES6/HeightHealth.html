@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!--  
+You can also use a property value shorthand when initializing properties with a variable by the same name.
+For example, properties height and health are being initialized with variables named height and health:
+
+Anda juga dapat menggunakan singkatan nilai properti saat menginisialisasi properti dengan variabel dengan nama yang sama.
+Misalnya, ketinggian dan kesehatan properti diinisialisasi dengan variabel bernama tinggi dan kesehatan:
+-->
+
+<html>
+    <body></body>
+    <script>
+        let height = 5;
+        let health = 100;
+
+        let athlete = {
+            height,
+            health
+        };
+
+        console.log(athlete.height); //5
+    </script>
+</html>

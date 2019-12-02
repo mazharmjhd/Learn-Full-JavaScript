@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<!--  
+Finally you can assign default values to variables, in case the value unpacked from the object is undefined.
+    Akhirnya Anda dapat menetapkan nilai default ke variabel, jika nilai yang dibongkar dari objek tidak terdefinisi.
+-->
+
+<html>
+    <body></body>
+    <script>
+        var obj ={id:42, name:'Jack', age:30};
+        let {id=10, age=20} = obj; 
+        // let Default
+
+        console.log(id); //42
+        console.log(age); //20
+    </script>
+</html>

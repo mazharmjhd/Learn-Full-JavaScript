@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--  
+The Date object enables us to work with dates.
+A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.
+
+Using new Date(), create a new date object with the current date and time.
+
+
+Objek Date memungkinkan kita untuk bekerja dengan tanggal.
+Tanggal terdiri dari satu tahun, satu bulan, satu hari, satu jam, satu menit, satu detik, dan milidetik.
+
+Menggunakan Date baru (), buat objek tanggal baru dengan tanggal dan waktu saat ini.
+-->
+
+
+var d = new Date();
+//d stores the current date and time
+
+<!--  
+The other ways to initialize dates allow for the creation of new date objects from the specified date and time.
+    Cara-cara lain untuk menginisialisasi tanggal memungkinkan pembuatan objek tanggal baru dari tanggal dan waktu yang ditentukan.
+-->
+
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+
+<!-- 
+JavaScript dates are calculated in milliseconds from 01 January, 1970 00:00:00 Universal Time (UTC). One day contains 86,400,000 millisecond.
+    Tanggal JavaScript dihitung dalam milidetik mulai 01 Januari, 1970 00:00:00 Waktu Universal (UTC). Suatu hari mengandung 86.400.000 milidetik.
+-->
+
+//Fri Jan 02 1970 00:00:00
+var d1 = new Date(86400000); 
+
+//Fri Jan 02 2015 10:42:00
+var d2 = new Date("January 2, 2015 10:42:00");
+
+//Sat Jun 11 1988 11:42:00
+var d3 = new Date(88,5,11,11,42,0,0);
+
+<!--  
+JavaScript counts months from 0 to 11. January is 0, and December is 11.
+Date objects are static, rather than dynamic. The computer time is ticking, but date objects don't change, once created.
+
+JavaScript menghitung bulan dari 0 hingga 11. Januari adalah 0, dan Desember adalah 11.
+Objek tanggal bersifat statis, bukan dinamis. Waktu komputer terus berdetak, tetapi objek tanggal tidak berubah, begitu dibuat.
+-->

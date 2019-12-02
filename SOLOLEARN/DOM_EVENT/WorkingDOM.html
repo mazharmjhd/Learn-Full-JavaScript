@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!--  
+Each element in the DOM has a set of properties and methods that provide information about their relationships in the DOM:
+element.childNodes returns an array of an element's child nodes.
+element.firstChild returns the first child node of an element.
+element.lastChild returns the last child node of an element.
+element.hasChildNodes returns true if an element has any child nodes, otherwise false.
+element.nextSibling returns the next node at the same tree level.
+element.previousSibling returns the previous node at the same tree level.
+element.parentNode returns the parent node of an element.
+
+Setiap elemen dalam DOM memiliki serangkaian properti dan metode yang memberikan informasi tentang hubungan mereka di DOM:
+element.childNodes mengembalikan larik simpul anak elemen.
+element.firstChild mengembalikan simpul anak pertama dari suatu elemen.
+element.lastChild mengembalikan simpul anak terakhir dari suatu elemen.
+element.hasChildNodes mengembalikan true jika elemen memiliki node anak, jika tidak palsu.
+element.nextSibling mengembalikan node berikutnya pada level pohon yang sama.
+element.previousSibling mengembalikan node sebelumnya di level pohon yang sama.
+element.parentNode mengembalikan simpul induk suatu elemen.
+-->
+
+<html>
+    <body>
+        <div id = "demo">
+            <p>Some Text</p>
+            <p>Some Other Text</p>
+        </div>
+        <script>
+            var a = document.getElementById("demo");
+            var arr = a.childNodes;
+                for(var x=0; x<arr.length; X++) {
+                    arr[x].innerHTML = "new text";
+                }
+
+                //memanggil fungsi dengan setTimeout untuk memastikan HTML dimuat
+setTimeout(setText, 500);
+        </script>
+    </body>
+</html>
+
+<!--  
+The code above changes the text of both paragraphs to "new text".
+-->

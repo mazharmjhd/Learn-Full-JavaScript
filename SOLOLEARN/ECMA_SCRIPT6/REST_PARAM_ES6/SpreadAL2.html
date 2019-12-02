@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<!--  
+You can use methods such as push, splice, and concat, for example, to achieve this in different positions of the array. However, in ES6 the spread operator lets us do this more easily:
+Anda dapat menggunakan metode seperti push, splice, dan concat, misalnya, untuk mencapai ini di berbagai posisi array. Namun, dalam ES6 operator spread memungkinkan kami melakukan ini dengan lebih mudah:
+-->
+
+<html>
+    <body></body>
+    <script>
+        let newArr =['Three','Four'];
+        let arr = ['One','Two',...newArr,'Five'];
+            console.log(arr);
+    </script>
+</html>

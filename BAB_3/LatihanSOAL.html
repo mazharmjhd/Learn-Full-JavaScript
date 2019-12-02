@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            DATA CENTER ID
+        </title>
+    </head>
+    <body BGCOLOR="darkgoldenrod">
+        <script language="JavaScript">
+            document.writeln("<center>");
+            document.writeln("<hr width=600 color=black>");
+            document.writeln("<h1>DATA CENTER INDONESIA</h1>");
+            document.writeln("<h2>Enter Your Data to Recieve the Full Service</h2>");
+            document.writeln("DATA INFORMATION CENTER");
+            document.writeln("<hr width=600 color=black>");
+            document.writeln("</center>");
+            
+            function tekan(){
+                var fnamestr = (document.fform.fname.value);
+                var lnamestr = (document.fform.lname.value);
+                var companystr = (document.fform.company.value);
+                var emailstr = (document.fform.email.value);
+                var datestr = (document.fform.CS.value);
+                var cloudcpt = (document.fform.CloudComputing);
+                    document.fform.ofname.value = fnamestr +" "+ lnamestr;
+                        console.log(fnamestr);
+                        // document.fform.olname.value = lnamestr;
+                            document.fform.ocompany.value = companystr;
+                                document.fform.oemail.value = emailstr;
+                                    document.fform.oCS.value = datestr;
+                                        document.fform.oCloudComputing.value = cloudcpt;
+
+            }
+            </script>
+            <form name ="fform">
+                    <h4>One Data Portal Republik</h4>
+                    <pre>
+                        <b>First Name          : </b><input type="text" size="25" name="fname"><br>
+                        <b>Last Name           : </b><input type="text" size="25" name="lname"><br>
+                        <b>Company Name        : </b><input type="text" size="25" name="company"><br>
+                        <b>Email Address       : </b><input type="email" size="25" name="email"><br>
+                        <b>Date Cloud Service  : </b><input type="datetime-local" size="25" name="CS"><br>
+                        <b>Cloud Computing     : </b><select name="CloudComputing" size="1">
+                            <option value="Multipolar Technology"> Multipolar Technology </option>
+                            <option value="Sisindokom Lintasbuana"> Sisindokom Lintasbuana </option>
+                            <option value="Mastersystem Infotama"> Mastersystem Infotama </option>
+                            <option value="Logicalis Metrodata Indonesia"> Logicalis Metrodata Indonesia </option> 
+                            <option value="Expert Data Voice Solution"> Expert Data Voice Solution </option>
+                            <option value="Kayreach System"> Kayreach System </option>
+                            <option value="Sinergy Informasi Pratama"> Sinergy Informasi Pratama </option>
+                            <option value="Revo Solusindo"> Revo Solusindo </option>
+                            </select>
+                        </pre>
+                            <br>
+                            <input type="button" value="Print Out" onclick="tekan()">
+                            <input type="reset" value="Detele">
+                            <h3>Data Printed</h3>
+                                <pre>
+                        <strong>Your Name               : </strong><input type="text" size="25" name="ofname"><br>
+                        <strong>Company Name            : </strong><input type="text" size="25" name="ocompany"><br>
+                        <strong>Your Email              : </strong><input type="email" size="25" name="oemail"><br>
+                        <strong>Date                    : </strong><input type="datetime-local" size="25" name="oCS"><br>
+                        <strong>Cloud Computing Service : </strong><input type="text" name="oCloudComputing" size="30"><br>
+                                </pre>
+
+                        </select>
+                    </pre>
+                </form>
+    </body>
+    
+</html>

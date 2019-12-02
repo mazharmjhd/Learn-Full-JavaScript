@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+<!--  
+In objects it copies the own enumerable properties from the provided object onto a new object.
+Dalam objek itu menyalin properti enumerable sendiri dari objek yang disediakan ke objek baru.
+-->
+
+<html>
+    <body></body>
+    <script>
+        const obj1 = {foo: 'bar', x:42};
+        const obj2 = {foo: 'baz', y:5};
+
+        const cloneObj = {...obj1}; //{foo: 'bar', x:42}
+        const mergeObj = {...obj1,...obj2}; //{foo: 'baz', y:5}
+    </script>
+</html>

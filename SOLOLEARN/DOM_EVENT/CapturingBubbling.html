@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!--  
+The addEventListener() method allows you to specify the propagation type with the "useCapture" parameter.
+    Metode addEventListener () memungkinkan Anda menentukan jenis propagasi dengan parameter "useCapture".
+
+addEventListener(event, function, useCapture)
+-->
+
+<!--  
+The default value is false, which means the bubbling propagation is used; when the value is set to true, the event uses the capturing propagation.
+    Nilai default salah, yang berarti propagasi gelembung digunakan; Ketika nilai diatur ke true, acara menggunakan propagasi menangkap.
+
+//Capturing propagation
+elem1.addEventListener("click", myFunction, true); 
+
+//Bubbling propagation
+elem2.addEventListener("click", myFunction, false);
+-->
+
+<!--  
+This is particularly useful when you have the same event handled for multiple elements in the DOM hierarchy.
+    Ini sangat berguna ketika Anda memiliki acara yang sama ditangani untuk beberapa elemen dalam hierarki DOM.
+-->

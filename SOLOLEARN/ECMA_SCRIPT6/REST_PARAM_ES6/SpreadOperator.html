@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<!--  
+This operator is similar to the Rest Parameter, but it has another purpose when used in objects or arrays or function calls (arguments).
+Spread in function calls
+It is common to pass the elements of an array as arguments to a function. Before ES6, we used the following method:
+
+
+Operator ini mirip dengan Parameter Istirahat, tetapi memiliki tujuan lain ketika digunakan dalam objek atau array atau panggilan fungsi (argumen).
+Menyebarkan panggilan fungsi
+Adalah umum untuk melewatkan elemen-elemen dari array sebagai argumen untuk suatu fungsi. Sebelum ES6, kami menggunakan metode berikut:
+-->
+
+<html>
+    <body>
+    </body>
+        <script>
+            function myFunction(w,x,y,z) {
+                console.log(w+x+y+z);
+            }
+            var args = [1,2,3];
+            myFunction.apply(null, args.concat(4));
+        </script>
+</html>

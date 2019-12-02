@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<!--  
+The getElementsByClassName() method returns a collection of all elements in the document with the specified class name.
+For example, if our HTML page contained three elements with class="demo", the following code would return all those elements as an array:
+
+Metode getElementsByClassName () mengembalikan koleksi semua elemen dalam dokumen dengan nama kelas yang ditentukan.
+Misalnya, jika halaman HTML kami berisi tiga elemen dengan class = "demo", kode berikut akan mengembalikan semua elemen tersebut sebagai array:
+
+var arr =  document.getElementsByClassName("demo");
+//accessing the second element
+arr[1].innerHTML = "Hi";
+-->
+
+<!--  
+Similarly, the getElementsByTagName method returns all of the elements of the specified tag name as an array.
+The following example gets all paragraph elements of the page and changes their content:
+<p>hi</p>
+
+Demikian pula, metode getElementsByTagName mengembalikan semua elemen dari nama tag yang ditentukan sebagai array.
+Contoh berikut mendapatkan semua elemen paragraf dari halaman dan mengubah kontennya:
+<p> hai </p>
+
+<p>hi</p>
+<p>hello</p>
+<p>hi</p>
+<script>
+var arr = document.getElementsByTagName("p");
+for (var x = 0; x < arr.length; x++) {
+  arr[x].innerHTML = "Hi there";
+}
+</script>
+-->
+
+<html>
+    <body>
+        <p>hi</p>
+        <p>hello</p>
+        <p>hi</p>
+            <script>
+                var arr = document.getElementsByTagName("p");
+                    for (var x = 0; x < arr.length; x++) {
+                    arr[x].innerHTML = "Hi there";
+                }
+            </script>
+    </body>
+</html>
+
+<!--  
+The script will result in the following HTML:
+
+<p>Hi there</p>
+<p>Hi there</p>
+<p>Hi there</p>
+
+We used the length property of the array to loop through all the selected elements in the above example.
+-->
